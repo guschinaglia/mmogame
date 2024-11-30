@@ -1,0 +1,23 @@
+<div class="shadow-md flex flex-row gap-2 h-12">
+  <div class="pl-2 content-center">
+    <p-button
+      icon="pi pi-bars"
+      severity="contrast"
+      size="small"
+      [text]="true"
+      (onClick)="sidebarVisible = true"
+    />
+  </div>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible">
+  teste
+</p-sidebar>
+
+<!--<div class="pt-2">-->
+<!--  <app-tabmenu />-->
+<!--</div>-->
+
+<div class="p-4">
+  <router-outlet />
+</div>
